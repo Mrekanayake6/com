@@ -261,9 +261,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    carouselEl.addEventListener('mouseenter', stopAutoplay);
+    // Pause on hover only when mouse/pointer hovering is actually supported
+    carouselEl.addEventListener('mouseenter', () => {
+      if (window.matchMedia && window.matchMedia('(hover: hover)').matches) {
+        stopAutoplay();
+      }
+    });
     carouselEl.addEventListener('mouseleave', () => {
-      if (!isPaused) startAutoplay();
+      if (window.matchMedia && window.matchMedia('(hover: hover)').matches && !isPaused) {
+        startAutoplay();
+      }
     });
 
     carouselEl.addEventListener('focusin', stopAutoplay);
@@ -281,25 +288,50 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Mobile-optimized touch swipe handling
     let touchStartX = 0;
+    let touchStartY = 0;
     let touchEndX = 0;
+    let touchEndY = 0;
+    let touchStartTime = 0;
 
     carouselEl.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
+      if (e.touches.length > 1) return;
+      const touch = e.touches[0];
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+      touchEndX = touch.clientX;
+      touchEndY = touch.clientY;
+      touchStartTime = Date.now();
       stopAutoplay();
     }, { passive: true });
 
+    carouselEl.addEventListener('touchmove', (e) => {
+      if (e.touches.length > 1) return;
+      touchEndX = e.touches[0].clientX;
+      touchEndY = e.touches[0].clientY;
+    }, { passive: true });
+
     carouselEl.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      const diff = touchEndX - touchStartX;
-      if (Math.abs(diff) > 40) {
-        if (diff < 0) {
+      const diffX = touchEndX - touchStartX;
+      const diffY = touchEndY - touchStartY;
+      const timeTaken = Date.now() - touchStartTime;
+
+      // Only trigger horizontal slide transition when horizontal motion clearly dominates vertical scrolling
+      const isHorizontalSwipe = Math.abs(diffX) > Math.abs(diffY) * 1.25;
+      const isSignificantDistance = Math.abs(diffX) > 36 || (Math.abs(diffX) > 22 && timeTaken < 300);
+
+      if (isHorizontalSwipe && isSignificantDistance) {
+        if (diffX < 0) {
           nextSlide();
         } else {
           prevSlide();
         }
       }
-      if (!isPaused) startAutoplay();
+
+      if (!isPaused) {
+        startAutoplay();
+      }
     }, { passive: true });
 
     startAutoplay();

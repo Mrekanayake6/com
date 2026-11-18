@@ -711,6 +711,14 @@ ul, ol {
 .slide-text-block {
   max-width: 620px;
   padding: 40px 0;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 450ms ease 100ms, transform 450ms cubic-bezier(0.16, 1, 0.3, 1) 100ms;
+}
+
+.carousel-slide.active .slide-text-block {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .slide-badge-text {
@@ -831,6 +839,16 @@ ul, ol {
   overflow: hidden;
 }
 
+/* Expanded touch target for easy finger taps on mobile and touchscreens */
+.carousel-dot::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  bottom: -14px;
+  left: -4px;
+  right: -4px;
+}
+
 .carousel-dot::after {
   content: '';
   position: absolute;
@@ -851,6 +869,7 @@ ul, ol {
   animation: carouselBarFill 5500ms linear forwards;
 }
 
+.carousel-viewport.carousel-paused .carousel-dot.active::after,
 .carousel-container.carousel-paused .carousel-dot.active::after {
   animation-play-state: paused;
 }
@@ -2409,34 +2428,98 @@ ul, ol {
     justify-content: center;
   }
 
+  /* Mobile Carousel Architecture */
   .carousel-viewport {
-    min-height: 520px;
-    height: 540px;
+    min-height: 560px;
+    height: clamp(560px, 80vh, 650px);
+  }
+
+  .slide-content-container {
+    padding-top: 32px;
+    padding-bottom: 76px; /* Protect bottom controls from overlap */
+    justify-content: center;
+  }
+
+  .slide-text-block {
+    padding: 0;
+    max-width: 100%;
   }
 
   .slide-scrim {
     background: linear-gradient(
       180deg,
-      rgba(6, 13, 23, 0.88) 0%,
-      rgba(6, 13, 23, 0.94) 100%
+      rgba(6, 13, 23, 0.84) 0%,
+      rgba(6, 13, 23, 0.70) 45%,
+      rgba(6, 13, 23, 0.92) 100%
     );
   }
 
   .slide-headline {
     font-size: 2rem;
+    line-height: 1.18;
+    margin-bottom: 14px;
   }
 
+  .slide-description {
+    font-size: 1.0625rem;
+    line-height: 1.55;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  /* Reposition arrow navigation buttons to bottom toolbar on mobile so they never obscure slide text */
   .carousel-nav-btn {
+    top: auto;
+    bottom: 20px;
+    transform: none;
     width: 38px;
     height: 38px;
+    border-radius: var(--radius-full);
+    background-color: rgba(10, 25, 47, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    z-index: 12;
+    backdrop-filter: blur(8px);
+  }
+
+  .carousel-nav-btn:hover,
+  .carousel-nav-btn:active {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #FFFFFF;
+    transform: scale(1.08);
   }
 
   .carousel-nav-btn.prev {
-    left: 12px;
+    left: auto;
+    right: calc(var(--container-padding) + 48px);
   }
 
   .carousel-nav-btn.next {
-    right: 12px;
+    right: var(--container-padding);
+  }
+
+  .carousel-nav-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .carousel-bottom-bar {
+    bottom: 20px;
+    z-index: 11;
+  }
+
+  .carousel-bottom-inner {
+    padding-right: 98px; /* Safe gutter for right-aligned prev/next buttons */
+    gap: 12px;
+  }
+
+  .carousel-dot {
+    width: 24px;
+    height: 5px;
+  }
+
+  .carousel-dot.active {
+    width: 44px;
   }
 
   .product-grid {
@@ -2610,21 +2693,85 @@ ul, ol {
     --container-padding: 14px;
   }
 
+  .carousel-viewport {
+    min-height: 580px;
+    height: auto;
+  }
+
+  .slide-content-container {
+    padding-top: 28px;
+    padding-bottom: 74px;
+  }
+
+  .slide-badge-text {
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+  }
+
   .slide-headline {
-    font-size: 1.75rem;
+    font-size: 1.625rem;
+    line-height: 1.2;
+    margin-bottom: 12px;
   }
 
   .slide-description {
-    font-size: 1rem;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
 
   .slide-actions {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
 
   .slide-actions .btn {
     width: 100%;
+    padding: 11px 18px;
+    font-size: 0.875rem;
+  }
+
+  .carousel-nav-btn {
+    width: 34px;
+    height: 34px;
+    bottom: 16px;
+  }
+
+  .carousel-nav-btn.prev {
+    right: calc(var(--container-padding) + 40px);
+  }
+
+  .carousel-nav-btn.next {
+    right: var(--container-padding);
+  }
+
+  .carousel-nav-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .carousel-bottom-bar {
+    bottom: 16px;
+  }
+
+  .carousel-bottom-inner {
+    padding-right: 86px;
+    gap: 8px;
+  }
+
+  .carousel-dot {
+    width: 20px;
+    height: 5px;
+  }
+
+  .carousel-dot.active {
+    width: 38px;
+  }
+
+  .pause-toggle-btn {
+    padding: 4px 6px;
+    font-size: 0.6875rem;
   }
 
   .section-toolbar {
@@ -2698,6 +2845,30 @@ ul, ol {
 
 /* Extra-narrow Screen Protection (<= 360px) */
 @media (max-width: 360px) {
+  .slide-headline {
+    font-size: 1.45rem;
+  }
+
+  .slide-description {
+    font-size: 0.875rem;
+  }
+
+  .carousel-bottom-inner {
+    padding-right: 78px;
+  }
+
+  .carousel-dot {
+    width: 16px;
+  }
+
+  .carousel-dot.active {
+    width: 28px;
+  }
+
+  #pause-text {
+    display: none;
+  }
+
   .product-actions {
     grid-template-columns: 1fr;
   }
