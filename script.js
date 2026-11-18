@@ -198,6 +198,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       currentSlide = (index + slides.length) % slides.length;
 
+      // Force animation reflow so background image Ken Burns zoom animation restarts smoothly
+      slides[currentSlide].classList.remove('active');
+      void slides[currentSlide].offsetWidth;
       slides[currentSlide].classList.add('active');
       if (dots[currentSlide]) {
         // Trigger reflow to restart CSS progress countdown animation from 0%
