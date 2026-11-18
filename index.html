@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkPoint | Mobile Phones, Printing Services & Bookshop</title>
+    <meta name="description" content="LinkPoint is a premier multi-service retail store in Sri Lanka offering verified mobile phones & accessories, professional digital printing & binding, and quality books & school stationery." />
+    <meta property="og:title" content="LinkPoint | Mobile Phones, Printing Services & Bookshop" />
+    <meta property="og:description" content="A real-world local business in Sri Lanka combining mobile technology, high-speed document printing, and comprehensive stationery." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Pure CSS3 Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Reading Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+    <!-- Top Utility Bar -->
+    <aside class="top-notice-bar" aria-label="Shop announcement and operating hours">
+      <div class="container top-notice-inner">
+        <div class="top-notice-left">
+          <div class="status-badge">
+            <span class="status-indicator" id="shop-status-dot"></span>
+            <span id="shop-status-text">Open Today until 8:00 PM</span>
+          </div>
+          <span class="meta-divider" aria-hidden="true">|</span>
+          <span>Hotline: <a href="tel:+94770000000" class="tabular-nums" style="font-weight: 600;">+94 77 000 0000</a></span>
+          <span class="meta-divider" aria-hidden="true">|</span>
+          <span>Sri Lanka · Local Counter Service</span>
+        </div>
+        <div class="top-notice-right">
+          <a href="#contact">Find Our Store</a>
+         
+         
+        </div>
+      </div>
+    </aside>
+
+    <!-- Site Header & Sticky Navigation -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Brand Wordmark -->
+        <a href="#hero" class="brand-lockup" aria-label="LinkPoint Home">
+          <span class="brand-name">LinkPoint<span class="brand-dot">.</span></span>
+          <span class="brand-tagline">MOBILE · PRINT · BOOKS</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#mobile-phones" class="nav-link">Mobile Phones</a>
+          <a href="#printing-services" class="nav-link">Printing</a>
+          <a href="#books-stationery" class="nav-link">Books & Stationery</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20am%20contacting%20you%20via%20your%20website." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-header" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span>Ask on WhatsApp</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+            <svg class="hamburger-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="4" y1="6" x2="20" y2="6" class="ham-line top"></line>
+              <line x1="4" y1="12" x2="20" y2="12" class="ham-line middle"></line>
+              <line x1="4" y1="18" x2="20" y2="18" class="ham-line bottom"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <div class="mobile-nav-content">
+        <ul class="mobile-nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#mobile-phones">Mobile Phones & Accessories</a></li>
+          <li><a href="#printing-services">Printing & Document Services</a></li>
+          <li><a href="#books-stationery">Books & Stationery</a></li>
+          <li><a href="#contact">Contact & Store Location</a></li>
+        </ul>
+        <div class="mobile-nav-contacts">
+          <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20am%20contacting%20you%20via%20your%20website." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+            Chat on WhatsApp (+94 77 000 0000)
+          </a>
+          <a href="tel:+94770000000" class="btn btn-secondary" style="width: 100%;">
+            Call Shop Counter
+          </a>
+          <button type="button" class="btn btn-navy setup-guide-trigger" style="width: 100%; margin-top: 8px;">
+            Owner Setup Guide
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Section 3: Main Hero Carousel (Highest Priority) -->
+      <section class="hero-section" id="hero" aria-label="LinkPoint Featured Services Carousel">
+        <div class="carousel-viewport" id="hero-carousel">
+          <!-- Slide 1: Mobile Phones -->
+          <article class="carousel-slide active" data-slide-index="0" aria-roledescription="slide" aria-label="1 of 3: Mobile Phones">
+            <img 
+              src="./images/hero-mobile.jpg" 
+              alt="Flagship smartphones and accessories in LinkPoint technology showroom" 
+              class="slide-bg-media"
+            />
+            <div class="slide-scrim"></div>
+            <div class="container slide-content-container">
+              <div class="slide-text-block">
+                <div class="slide-badge-text">
+                  <span>01</span>
+                  <span aria-hidden="true">·</span>
+                  <span>Mobile Phones & Tech Accessories</span>
+                </div>
+                <h1 class="slide-headline">Your next upgrade starts here.</h1>
+                <p class="slide-description">
+                  Discover verified smartphones, original fast chargers, tough braided cables, and precision-fitted 9H tempered glass screen protectors backed by reliable local service.
+                </p>
+                <div class="slide-actions">
+                  <a href="#mobile-phones" class="btn btn-primary">
+                    Explore Mobile Phones
+                  </a>
+                  <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20am%20inquiring%20about%20mobile%20phones%20and%20accessories%20currently%20in%20stock." target="_blank" rel="noopener noreferrer" class="btn btn-outline-white">
+                    Check Stock on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 2: Printing Services -->
+          <article class="carousel-slide" data-slide-index="1" aria-roledescription="slide" aria-label="2 of 3: Printing & Document Services">
+            <img 
+              src="./images/hero-printing.jpg" 
+              alt="Professional printing production workspace with laser printers and architectural plans" 
+              class="slide-bg-media"
+            />
+            <div class="slide-scrim"></div>
+            <div class="container slide-content-container">
+              <div class="slide-text-block">
+                <div class="slide-badge-text">
+                  <span>02</span>
+                  <span aria-hidden="true">·</span>
+                  <span>Digital Printing & Document Finishing</span>
+                </div>
+                <h2 class="slide-headline">From a quick copy to the final page.</h2>
+                <p class="slide-description">
+                  High-speed black & white photocopying, high-definition laser color prints, university thesis binding, thermal lamination, and crisp document scanning for students, professionals, and businesses.
+                </p>
+                <div class="slide-actions">
+                  <a href="#printing-services" class="btn btn-primary">
+                    Explore Print Services
+                  </a>
+                  <a href="#printing-calculator" class="btn btn-outline-white">
+                    Calculate Print Cost
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Slide 3: Books & Stationery -->
+          <article class="carousel-slide" data-slide-index="2" aria-roledescription="slide" aria-label="3 of 3: Books & Stationery">
+            <img 
+              src="./images/hero-stationery.jpg" 
+              alt="Quality exercise books, writing pens, drafting instruments and reference materials" 
+              class="slide-bg-media"
+            />
+            <div class="slide-scrim"></div>
+            <div class="container slide-content-container">
+              <div class="slide-text-block">
+                <div class="slide-badge-text">
+                  <span>03</span>
+                  <span aria-hidden="true">·</span>
+                  <span>Bookshop & School Stationery</span>
+                </div>
+                <h2 class="slide-headline">Everything you need to get started.</h2>
+                <p class="slide-description">
+                  CR exercise books, fine ballpoint and gel pens, mathematical instruments, office filing folders, past papers, and reading books. Ready for the school term and corporate workplace.
+                </p>
+                <div class="slide-actions">
+                  <a href="#books-stationery" class="btn btn-primary">
+                    Explore Books & Stationery
+                  </a>
+                  <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20would%20like%20to%20inquire%20about%20school%20booklists%20and%20stationery%20supplies." target="_blank" rel="noopener noreferrer" class="btn btn-outline-white">
+                    Send Booklist Inquiry
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carousel Arrow Controls -->
+          <button type="button" class="carousel-nav-btn prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button type="button" class="carousel-nav-btn next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Carousel Bottom Bar (Indicators & Pause) -->
+          <div class="carousel-bottom-bar">
+            <div class="container carousel-bottom-inner">
+              <div class="carousel-indicators" role="tablist" aria-label="Carousel slide selectors">
+                <button type="button" class="carousel-dot active" role="tab" aria-selected="true" aria-label="Go to Slide 1: Mobile Phones" data-index="0"></button>
+                <button type="button" class="carousel-dot" role="tab" aria-selected="false" aria-label="Go to Slide 2: Printing Services" data-index="1"></button>
+                <button type="button" class="carousel-dot" role="tab" aria-selected="false" aria-label="Go to Slide 3: Books & Stationery" data-index="2"></button>
+              </div>
+              <div class="carousel-playback">
+                <button type="button" class="pause-toggle-btn" id="carousel-pause-toggle" aria-label="Pause slide transitions">
+                  <svg id="pause-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                    <rect x="6" y="4" width="4" height="16"></rect>
+                    <rect x="14" y="4" width="4" height="16"></rect>
+                  </svg>
+                  <span id="pause-text">Pause</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Key Trust & Service Highlights Strip -->
+      <section class="trust-stats-strip reveal reveal-fade-up" aria-label="LinkPoint Service Highlights">
+        <div class="container trust-stats-grid">
+          <div class="stat-pill-item">
+            <div class="stat-pill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="stat-pill-text">
+              <strong>100% TRCSL Approved</strong>
+              <span>Verified Devices & Dealer Warranty</span>
+            </div>
+          </div>
+
+          <div class="stat-pill-item">
+            <div class="stat-pill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+            </div>
+            <div class="stat-pill-text">
+              <strong>Express Print Counter</strong>
+              <span>On-Demand Laser Printing & Binding</span>
+            </div>
+          </div>
+
+          <div class="stat-pill-item">
+            <div class="stat-pill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <div class="stat-pill-text">
+              <strong>School Term Ready</strong>
+              <span>All Exercise Books & Stationery Lists</span>
+            </div>
+          </div>
+
+          <div class="stat-pill-item">
+            <div class="stat-pill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="stat-pill-text">
+              <strong>4.9 / 5.0 Local Trust</strong>
+              <span>Friendly In-Store Counter Service</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Shop Categories Overview (Distinctive Editorial Layout) -->
+      <section class="categories-section" id="categories" aria-labelledby="cat-heading">
+        <div class="container">
+          <div class="section-header reveal reveal-fade-up">
+            <p class="section-kicker">Core Departments</p>
+            <h2 class="section-title" id="cat-heading">Three Essential Services Under One Roof</h2>
+            <p class="section-description">
+              Carefully organized retail sections to serve students, professionals, and households with dependable local service.
+            </p>
+          </div>
+
+          <div class="category-editorial-grid">
+            <!-- Category 1: Mobile Phones -->
+            <article class="category-card reveal reveal-fade-up delay-100">
+              <div class="category-card-media">
+                <img 
+                  src="./images/phones/category-smartphones.jpg" 
+                  alt="Modern smartphones and accessories" 
+                  loading="lazy"
+                />
+              </div>
+              <div class="category-card-body">
+                <span class="category-card-tag">Department 01</span>
+                <h3 class="category-card-title">Mobile Phones & Accessories</h3>
+                <p class="category-card-desc">
+                  Curated smartphone selections from reliable brands, paired with genuine accessories designed to protect and power your devices.
+                </p>
+                <ul class="category-checklist" aria-label="Mobile phone offerings">
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    Smartphones & feature phones
+                  </li>
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    Fast wall chargers & USB-C cables
+                  </li>
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    9H tempered glass & camera protectors
+                  </li>
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    Protective shockproof cases & pouches
+                  </li>
+                </ul>
+                <div class="category-card-footer">
+                  <a href="#mobile-phones" class="category-link-btn">
+                    <span>Explore Mobile Phones</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Category 2: Printing & Copying -->
+            <article class="category-card reveal reveal-fade-up delay-200">
+              <div class="category-card-media">
+                <img 
+                  src="./images/printing/category-printing.jpg" 
+                  alt="Bound documents, blueprints, and certificates" 
+                  loading="lazy"
+                />
+              </div>
+              <div class="category-card-body">
+                <span class="category-card-tag">Department 02</span>
+                <h3 class="category-card-title">Printing & Document Services</h3>
+                <p class="category-card-desc">
+                  High-capacity Japanese laser printing systems providing sharp text and accurate colors on standard and premium paper stocks.
+                </p>
+                <ul class="category-checklist" aria-label="Printing services offerings">
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    High-speed B&W & vivid color laser prints
+                  </li>
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    Spiral, comb & hardcover thesis binding
+                  </li>
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    Document scanning to PDF / USB / Email
+                  </li>
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    ID card & certificate heat lamination
+                  </li>
+                </ul>
+                <div class="category-card-footer">
+                  <a href="#printing-services" class="category-link-btn">
+                    <span>Explore Print Services</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Category 3: Books & Stationery -->
+            <article class="category-card reveal reveal-fade-up delay-300">
+              <div class="category-card-media">
+                <img 
+                  src="./images/stationery/category-stationery.jpg" 
+                  alt="Neatly arranged stationery shelves and exercise books" 
+                  loading="lazy"
+                />
+              </div>
+              <div class="category-card-body">
+                <span class="category-card-tag">Department 03</span>
+                <h3 class="category-card-title">Books, Books & Stationery</h3>
+                <p class="category-card-desc">
+                  Essential tools for learning and office administration, from Sri Lankan syllabus CR books to archival storage files and drafting pens.
+                </p>
+                <ul class="category-checklist" aria-label="Stationery offerings">
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    CR exercise books (80, 120, 200 pages)
+                  </li>
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    Ballpoint, gel & fountain pen collections
+                  </li>
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    Geometry instrument boxes & calculators
+                  </li>
+                  <li class="checklist-item">
+                    <svg class="checklist-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    Office box files, binders & staplers
+                  </li>
+                </ul>
+                <div class="category-card-footer">
+                  <a href="#books-stationery" class="category-link-btn">
+                    <span>Explore Books & Stationery</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Mobile Phone Showcase -->
+      <section class="showcase-section" id="mobile-phones" aria-labelledby="mobile-showcase-heading">
+        <div class="container">
+          <div class="section-header reveal reveal-fade-up">
+            <p class="section-kicker">Technology Showcase</p>
+            <h2 class="section-title" id="mobile-showcase-heading">Mobile Phones & Accessories</h2>
+            <p class="section-description">
+              Browse our demonstration inventory of popular smartphones and original accessories. Ask our counter team directly on WhatsApp to confirm current prices and stock availability.
+            </p>
+          </div>
+
+          <!-- Transparency / Demonstration Notice Strip -->
+          <div class="demo-notice-strip reveal reveal-fade-up delay-100" role="note">
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+            </svg>
+            <span>
+              <strong>Demonstration Catalog Notice:</strong> The devices and pricing listed below represent sample demonstration data for the website layout. Official retail pricing in Sri Lanka fluctuates with exchange rates. Please click <em>"Ask on WhatsApp"</em> to receive today's live stock quote and authorized warranty details.
+            </span>
+          </div>
+
+          <!-- Filter Toolbar -->
+          <div class="section-toolbar reveal reveal-fade-up delay-150">
+            <div class="filter-group" role="tablist" aria-label="Product categories">
+              <button type="button" class="filter-tab active" data-category="all" role="tab">All Products</button>
+              <button type="button" class="filter-tab" data-category="smartphones" role="tab">Smartphones</button>
+              <button type="button" class="filter-tab" data-category="accessories" role="tab">Chargers & Accessories</button>
+            </div>
+            <div class="search-box-wrapper">
+              <input 
+                type="text" 
+                id="phone-search" 
+                class="form-input" 
+                placeholder="Search models or brands..." 
+                aria-label="Filter products by name or brand"
+              />
+            </div>
+          </div>
+
+          <!-- Dynamic Product Cards Grid -->
+          <div class="product-grid" id="product-grid" aria-live="polite">
+            <!-- Populated via script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Printing & Document Services & Interactive Calculator -->
+      <section class="print-section" id="printing-services" aria-labelledby="print-heading">
+        <div class="container">
+          <div class="section-header reveal reveal-fade-up">
+            <p class="section-kicker">Professional Print Counter</p>
+            <h2 class="section-title" id="print-heading">Printing, Photocopying & Document Services</h2>
+            <p class="section-description">
+              Fast, high-resolution document reproduction for educational, corporate, and personal projects. Submit your files in person or via WhatsApp for immediate printing.
+            </p>
+          </div>
+
+          <div class="print-layout">
+            <!-- Left: Service Capabilities -->
+            <div class="service-card-stack">
+              <!-- Service 1 -->
+              <article class="service-row-card reveal reveal-fade-left delay-100">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                </div>
+                <div class="service-info">
+                  <h3 class="service-name">High-Speed B&W Photocopying & Printing</h3>
+                  <p class="service-details">
+                    Clean, crisp text copies at high speeds on premium 70gsm and 80gsm paper. Single-sided and double-sided (duplex) formats available with bulk volume discounts for schools and institutes.
+                  </p>
+                  <div class="service-meta">
+                    <span>Sizes: A4, Legal, A3</span>
+                    <span aria-hidden="true">·</span>
+                    <span class="tabular-nums">From Rs. 15 / page</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Service 2 -->
+              <article class="service-row-card reveal reveal-fade-left delay-150">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                  </svg>
+                </div>
+                <div class="service-info">
+                  <h3 class="service-name">High-Definition Laser Colour Printing</h3>
+                  <p class="service-details">
+                    Vibrant color output ideal for project presentations, reports, portfolio lookbooks, brochures, certificates, and marketing leaflets.
+                  </p>
+                  <div class="service-meta">
+                    <span>Stocks: 80gsm Bond, 120gsm Silk, 230gsm Glossy</span>
+                    <span aria-hidden="true">·</span>
+                    <span class="tabular-nums">From Rs. 75 / page</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Service 3 -->
+              <article class="service-row-card reveal reveal-fade-left delay-200">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                </div>
+                <div class="service-info">
+                  <h3 class="service-name">Spiral, Plastic Comb & Hardcover Thesis Binding</h3>
+                  <p class="service-details">
+                    Professional document finishing with clear protective PVC front covers, textured back covers, and gold-foil lettered hardcovers compliant with Sri Lankan university guidelines.
+                  </p>
+                  <div class="service-meta">
+                    <span>Options: Spiral, Comb, Hardcover Gold Foil</span>
+                    <span aria-hidden="true">·</span>
+                    <span class="tabular-nums">From Rs. 200</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Service 4 -->
+              <article class="service-row-card reveal reveal-fade-left delay-250">
+                <div class="service-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                </div>
+                <div class="service-info">
+                  <h3 class="service-name">Document Scanning & Heat Lamination</h3>
+                  <p class="service-details">
+                    High-DPI flatbed and auto-feeder scanning direct to PDF. Heavy-duty glossy heat lamination for National ID cards, driving licenses, certificates, and instructional notices.
+                  </p>
+                  <div class="service-meta">
+                    <span>Formats: PDF, JPEG / Lamination up to A3</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Direct WhatsApp & USB Delivery</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Right: Interactive Print Cost Calculator -->
+            <div class="calculator-box reveal reveal-fade-right delay-200" id="printing-calculator">
+              <div class="calculator-header">
+                <h3 class="calculator-title">Estimate Your Print Order</h3>
+                <p class="calculator-subtitle">Calculate estimated costs and instantly request a quote via WhatsApp.</p>
+              </div>
+
+              <form id="print-calc-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                  <label for="calc-service" class="form-label">Print Service Type</label>
+                  <select id="calc-service" class="form-select">
+                    <option value="bw_single">B&W Printing / Photocopy (Single-Sided)</option>
+                    <option value="bw_double">B&W Printing (Double-Sided Duplex)</option>
+                    <option value="color_single">Colour Laser (Single-Sided Standard)</option>
+                    <option value="color_double">Colour Laser (Double-Sided Duplex)</option>
+                    <option value="photo_print">Photo Quality Glossy Print</option>
+                    <option value="doc_scan">Document Scanning to PDF</option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="calc-size" class="form-label">Paper Size</label>
+                    <select id="calc-size" class="form-select">
+                      <option value="A4">A4 (Standard Document)</option>
+                      <option value="A3">A3 (Large Ledger / Poster)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="calc-qty" class="form-label">Number of Pages / Copies</label>
+                    <input type="number" id="calc-qty" class="form-input tabular-nums" value="25" min="1" max="10000" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="calc-finishing" class="form-label">Document Finishing & Binding</label>
+                  <select id="calc-finishing" class="form-select">
+                    <option value="none">No Finishing (Loose Sheets)</option>
+                    <option value="stapling">Corner Stapling (+Rs. 10)</option>
+                    <option value="comb_binding">Plastic Comb Binding with Clear Cover (+Rs. 200)</option>
+                    <option value="spiral_binding">Wire Spiral Binding with Clear Cover (+Rs. 250)</option>
+                    <option value="hardcover_binding">Hardcover Project / Thesis Binding (+Rs. 1,200)</option>
+                    <option value="lamination_a4">Thermal Lamination A4 (+Rs. 120)</option>
+                    <option value="lamination_a3">Thermal Lamination A3 (+Rs. 220)</option>
+                  </select>
+                </div>
+
+                <!-- Price Result Display -->
+                <div class="calc-result-panel">
+                  <div class="calc-line">
+                    <span>Printing / Scanning Subtotal:</span>
+                    <span id="calc-subtotal" class="tabular-nums" style="font-weight: 600; color: #0F172A;">Rs. 375</span>
+                  </div>
+                  <div class="calc-line">
+                    <span>Finishing & Binding:</span>
+                    <span id="calc-finishing-total" class="tabular-nums" style="font-weight: 600; color: #0F172A;">Rs. 0</span>
+                  </div>
+                  <div class="calc-total-line">
+                    <span class="calc-total-label">Estimated Total:</span>
+                    <span id="calc-grand-total" class="calc-total-price">Rs. 375</span>
+                  </div>
+                  <p class="calc-disclaimer">
+                    *Rates in Sri Lankan Rupees (LKR). Actual quote may vary for specialty heavy cardstocks or high-volume school batches.
+                  </p>
+                </div>
+
+                <a id="calc-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+                  Send Quote Request on WhatsApp
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 7: Books & Stationery Section -->
+      <section class="stationery-section" id="books-stationery" aria-labelledby="stationery-heading">
+        <div class="container">
+          <div class="section-header reveal reveal-fade-up">
+            <p class="section-kicker">Books & School Supplies</p>
+            <h2 class="section-title" id="stationery-heading">Books, Exercise Books & Stationery</h2>
+            <p class="section-description">
+              Quality school books, writing supplies, and office materials for students, teachers, and businesses. Prepared for Sri Lankan school terms and everyday work.
+            </p>
+          </div>
+
+          <div class="stationery-editorial-grid">
+            <!-- Item 1 -->
+            <article class="stationery-card reveal reveal-fade-up delay-100">
+              <div class="stationery-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </div>
+              <h3 class="stationery-title">Exercise Books & CR Books</h3>
+              <p class="stationery-text">
+                Durable laminated cover exercise books made for school curricula with clear rulings and ink-resistant paper.
+              </p>
+              <div class="stationery-items-list">
+                <span class="stationery-pill">CR 80, 120, 200 Pages</span>
+                <span class="stationery-pill">Single Rule & Square Rule</span>
+                <span class="stationery-pill">Drawing & Music Manuscript Books</span>
+              </div>
+              <div class="stationery-action">
+                <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20am%20inquiring%20about%20exercise%20books%20and%20CR%20book%20availability." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="width: 100%;">
+                  Inquire on WhatsApp
+                </a>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="stationery-card reveal reveal-fade-up delay-200">
+              <div class="stationery-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="stationery-title">Writing & Art Instruments</h3>
+              <p class="stationery-text">
+                Reliable pens, highlighters, permanent markers, color pencils, and technical drawing pencils from trusted manufacturers.
+              </p>
+              <div class="stationery-items-list">
+                <span class="stationery-pill">Ballpoint & Smooth Gel Pens</span>
+                <span class="stationery-pill">Faber-Castell & Atlas Color Pencils</span>
+                <span class="stationery-pill">Pastels, Watercolours & Brushes</span>
+              </div>
+              <div class="stationery-action">
+                <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20would%20like%20to%20know%20about%20writing%20pens%20and%20art%20stationery." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="width: 100%;">
+                  Inquire on WhatsApp
+                </a>
+              </div>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="stationery-card reveal reveal-fade-up delay-300">
+              <div class="stationery-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <h3 class="stationery-title">Geometry & Calculators</h3>
+              <p class="stationery-text">
+                Precision instrument boxes and certified non-programmable scientific calculators for O/L and A/L examinations.
+              </p>
+              <div class="stationery-items-list">
+                <span class="stationery-pill">Metal Geometry Box Sets</span>
+                <span class="stationery-pill">Casio Scientific Calculators</span>
+                <span class="stationery-pill">30cm Rulers, Protractors & Compasses</span>
+              </div>
+              <div class="stationery-action">
+                <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20am%20asking%20about%20scientific%20calculators%20and%20geometry%20boxes." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="width: 100%;">
+                  Inquire on WhatsApp
+                </a>
+              </div>
+            </article>
+
+            <!-- Item 4 -->
+            <article class="stationery-card reveal reveal-fade-up delay-400">
+              <div class="stationery-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="stationery-title">Office & Filing Supplies</h3>
+              <p class="stationery-text">
+                Keep administrative records organized with sturdy archival box files, report covers, laminating pouches, and desktop tools.
+              </p>
+              <div class="stationery-items-list">
+                <span class="stationery-pill">Standard & Spring Box Files</span>
+                <span class="stationery-pill">Heavy-Duty Staplers & Hole Punches</span>
+                <span class="stationery-pill">Post-it Notes, Tape & Paper Clips</span>
+              </div>
+              <div class="stationery-action">
+                <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20would%20like%20to%20order%20office%20filing%20and%20stationery%20supplies." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="width: 100%;">
+                  Inquire on WhatsApp
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Curated Stationery Packs Strip -->
+          <div class="packs-box reveal reveal-zoom-in delay-150">
+            <div class="packs-info">
+              <h3>Need a School or Office Supply Bundle?</h3>
+              <p>
+                Save time at the beginning of each academic term. Hand in or WhatsApp your school booklist to LinkPoint, and our counter team will pack all items for easy pickup.
+              </p>
+            </div>
+            <div class="packs-grid">
+              <div class="pack-item">
+                <h4 class="pack-item-name">School Term Pack</h4>
+                <p class="pack-item-desc">CR books, pencil box, covers, eraser, ruler & pens.</p>
+                <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20would%20like%20to%20order%20the%20School%20Term%20Stationery%20Pack." target="_blank" rel="noopener noreferrer" class="pack-item-cta">
+                  <span>Send List via WhatsApp</span> <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="pack-item">
+                <h4 class="pack-item-name">Office Desk Bundle</h4>
+                <p class="pack-item-desc">A4 paper ream, box file, pens, stapler & sticky notes.</p>
+                <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20would%20like%20to%20inquire%20about%20Office%20Supply%20Bundles." target="_blank" rel="noopener noreferrer" class="pack-item-cta">
+                  <span>Inquire for Office</span> <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="pack-item">
+                <h4 class="pack-item-name">O/L & A/L Exam Kit</h4>
+                <p class="pack-item-desc">Clear pencil pouch, approved pens, geometry set & past papers.</p>
+                <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20need%20the%20Exam%20Stationery%20Kit." target="_blank" rel="noopener noreferrer" class="pack-item-cta">
+                  <span>Ask at Counter</span> <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Why Choose LinkPoint (Trust & Standards) -->
+      <section class="trust-section" aria-labelledby="trust-heading">
+        <div class="container">
+          <div class="section-header reveal reveal-fade-up" style="text-align: center; max-width: 650px; margin-left: auto; margin-right: auto;">
+            <p class="section-kicker">Local Reliability</p>
+            <h2 class="section-title" id="trust-heading">Why Customers Rely on LinkPoint</h2>
+            <p class="section-description" style="margin-left: auto; margin-right: auto;">
+              Transparent service, genuine stock, and dependable turnaround times for every customer.
+            </p>
+          </div>
+
+          <div class="trust-grid">
+            <div class="trust-item reveal reveal-fade-up delay-100">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <h3 class="trust-title">Genuine Stock & Verification</h3>
+              <p class="trust-desc">
+                We clearly differentiate between original distributor items and budget accessories so you always know what you are paying for.
+              </p>
+            </div>
+
+            <div class="trust-item reveal reveal-fade-up delay-200">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <h3 class="trust-title">Quick Turnaround Printing</h3>
+              <p class="trust-desc">
+                Walk in with a flash drive or forward your PDF on WhatsApp—we print urgent university assignments and workplace contracts on demand.
+              </p>
+            </div>
+
+            <div class="trust-item reveal reveal-fade-up delay-300">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+              <h3 class="trust-title">Complete School Term Support</h3>
+              <p class="trust-desc">
+                From primary grades to A/Level syllabuses, we stock all compulsory CR exercise books, covers, geometry boxes, and drafting paper.
+              </p>
+            </div>
+
+            <div class="trust-item reveal reveal-fade-up delay-400">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <h3 class="trust-title">Friendly Local Counter Service</h3>
+              <p class="trust-desc">
+                Conveniently located with friendly staff ready to assist with mobile accessories, document binding, or custom stationery lists.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: Useful Business Features & Contact -->
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <div class="section-header reveal reveal-fade-up">
+            <p class="section-kicker">Find & Reach Us</p>
+            <h2 class="section-title" id="contact-heading">Visit Our Counter or Message Us</h2>
+            <p class="section-description">
+              We welcome inquiries by phone call, WhatsApp message, or direct store visits during business hours.
+            </p>
+          </div>
+
+          <div class="contact-layout">
+            <!-- Left: Contact Details & Quick Inquiry Form -->
+            <div class="contact-card-box reveal reveal-fade-left delay-150">
+              <h3 style="font-size: 1.375rem; font-weight: 800; color: #0A192F;">Store Information</h3>
+              <p style="font-size: 0.875rem; color: #64748B; margin-top: 4px;">
+                Clearly identified placeholders for your business details:
+              </p>
+
+              <div class="contact-item-group">
+                <!-- Phone -->
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-detail-info">
+                    <h4>Direct Call</h4>
+                    <p><a href="tel:+94770000000" class="tabular-nums">+94 77 000 0000</a> / <a href="tel:+94112000000" class="tabular-nums">+94 11 200 0000</a></p>
+                    <span class="placeholder-badge">[Replace with owner's active phone numbers]</span>
+                  </div>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-detail-info">
+                    <h4>WhatsApp Counter Chat</h4>
+                    <p>
+                      <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20am%20inquiring%20about%20your%20services." target="_blank" rel="noopener noreferrer" style="color: #25D366; font-weight: 700;">
+                        Click to chat on WhatsApp (+94 77 000 0000)
+                      </a>
+                    </p>
+                    <span class="placeholder-badge">[Replace with owner's registered WhatsApp number]</span>
+                  </div>
+                </div>
+
+                <!-- Address -->
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-detail-info">
+                    <h4>Shop Location & Address</h4>
+                    <p>No. 142, Main Street, Colombo Road, Sri Lanka</p>
+                    <span class="placeholder-badge">[Shop Address Placeholder: replace with actual physical street location]</span>
+                  </div>
+                </div>
+
+                <!-- Hours -->
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-detail-info">
+                    <h4>Operating Hours</h4>
+                    <p>Monday – Saturday: <strong>8:00 AM – 8:00 PM</strong></p>
+                    <p>Sunday & Poya Days: <strong>9:00 AM – 3:00 PM</strong></p>
+                    <span class="placeholder-badge">[Opening Hours Placeholder: adjust to match exact shop schedule]</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Message Form -->
+              <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #E2E8F0;">
+                <h4 style="font-size: 1.0625rem; font-weight: 700; color: #0A192F;">Send a Direct In-Store Message</h4>
+                <p style="font-size: 0.8125rem; color: #64748B; margin-top: 2px;">
+                  Fill this quick note and it will automatically format a message to our WhatsApp counter.
+                </p>
+
+                <div id="form-feedback-notice" style="display: none; background: #DCFCE7; border: 1px solid #86EFAC; color: #166534; padding: 10px 14px; border-radius: 8px; font-size: 0.8125rem; margin-top: 12px; font-weight: 600;">
+                  Ready! WhatsApp opened in a new tab with your pre-filled inquiry.
+                </div>
+
+                <form class="inquiry-form" id="quick-inquiry-form">
+                  <div class="form-row">
+                    <div class="form-group" style="margin-bottom: 0;">
+                      <label for="inquiry-name" class="form-label">Your Name</label>
+                      <input type="text" id="inquiry-name" class="form-input" placeholder="e.g. Kasun Fernando" required />
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                      <label for="inquiry-phone" class="form-label">Contact Number</label>
+                      <input type="tel" id="inquiry-phone" class="form-input tabular-nums" placeholder="e.g. 077 123 4567" />
+                    </div>
+                  </div>
+
+                  <div class="form-group" style="margin-bottom: 0;">
+                    <label for="inquiry-dept" class="form-label">Service Area</label>
+                    <select id="inquiry-dept" class="form-select">
+                      <option value="Mobile Phones & Accessories">Mobile Phones & Accessories</option>
+                      <option value="Printing & Binding Services">Printing & Binding Services</option>
+                      <option value="Books & Stationery Supplies">Books & Stationery Supplies</option>
+                      <option value="General Store Inquiry">General Store Inquiry</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group" style="margin-bottom: 0;">
+                    <label for="inquiry-msg" class="form-label">Your Message or Item Request</label>
+                    <textarea id="inquiry-msg" class="form-input" rows="3" placeholder="Tell us what you are looking for..." required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
+                    Submit & Open WhatsApp Message
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Map & Location Guide -->
+            <div class="map-embed-wrapper reveal reveal-fade-right delay-200">
+              <iframe 
+                class="map-embed-iframe" 
+                src="https://maps.google.com/maps?q=Colombo%20Road,%20Sri%20Lanka&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                title="LinkPoint Store Location Map">
+              </iframe>
+
+              <!-- Location Quick Highlights Bar -->
+              <div class="map-quick-bar">
+                <div class="map-quick-info">
+                  <h5 class="map-quick-title">Store Location & Access</h5>
+                  <p class="map-quick-desc">
+                    Main commercial road with roadside customer parking. Within easy walking distance of local transit stops and schools.
+                  </p>
+                </div>
+                <a href="https://maps.google.com?q=Colombo+Road+Sri+Lanka" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm map-directions-btn">
+                  <span>Get Directions</span> <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top reveal reveal-fade-up">
+          <!-- Col 1: Brand Info -->
+          <div class="footer-brand">
+            <a href="#hero" class="brand-name">LinkPoint<span class="brand-dot">.</span></a>
+            <p>
+              Your trusted neighborhood destination for verified mobile phones, high-speed document printing and binding, and school stationery supplies in Sri Lanka.
+            </p>
+            <div style="margin-top: 16px;">
+              <span style="display: inline-block; font-size: 0.75rem; color: #FDBA74; font-weight: 700;">
+                MOBILE · PRINT · BOOKS
+              </span>
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation Links -->
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#mobile-phones">Mobile Phones</a></li>
+              <li><a href="#printing-services">Printing & Photocopy</a></li>
+              <li><a href="#books-stationery">Books & Stationery</a></li>
+              <li><a href="#contact">Contact & Map</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Services -->
+          <div>
+            <h4 class="footer-col-title">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#mobile-phones">Smartphones & Warranty</a></li>
+              <li><a href="#mobile-phones">9H Glass & Fitting</a></li>
+              <li><a href="#printing-services">B&W & Color Laser</a></li>
+              <li><a href="#printing-services">Thesis & Project Binding</a></li>
+              <li><a href="#books-stationery">CR School Exercise Books</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact & Hours -->
+          <div>
+            <h4 class="footer-col-title">Counter Hours</h4>
+            <div class="footer-contact-info">
+              <p>Mon – Sat: <strong>8:00 AM – 8:00 PM</strong></p>
+              <p>Sunday & Poya: <strong>9:00 AM – 3:00 PM</strong></p>
+              <p style="margin-top: 6px;">Hotline: <a href="tel:+94770000000" class="tabular-nums">+94 77 000 0000</a></p>
+              <p>WhatsApp: <a href="https://wa.me/94770000000" target="_blank" rel="noopener noreferrer" class="tabular-nums">+94 77 000 0000</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 LinkPoint Retail Store. All demonstration rights reserved. Built for professional retail deployment in Sri Lanka.</p>
+          <div class="footer-credits">
+            <button type="button" class="setup-guide-trigger" style="color: #FDBA74; font-weight: 600; text-decoration: underline; font-size: 0.8125rem;">
+              Owner Setup Guide & Placeholder Checklist
+            </button>
+            <span aria-hidden="true">·</span>
+            <a href="#hero" style="color: #94A3B8;">Back to top ↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/94770000000?text=Hello%20LinkPoint,%20I%20have%20an%20inquiry%20from%20your%20website." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat directly on WhatsApp with LinkPoint store">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+      <span>WhatsApp Counter</span>
+    </a>
+
+    <!-- Floating Back-to-Top Button -->
+    <button type="button" class="back-to-top-btn" id="back-to-top-btn" aria-label="Scroll back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <!-- Quick Spec Modal -->
+    <div class="modal-backdrop" id="product-spec-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-product-title">
+      <div class="modal-window">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-product-title">Product Details</h4>
+          <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close modal window">✕</button>
+        </div>
+        <div class="modal-body">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;">
+            <span style="font-size: 0.8125rem; color: #64748B;">Sample Retail Estimate</span>
+            <span id="modal-product-price" style="font-size: 1.375rem; font-weight: 800; color: #0A192F;">-</span>
+          </div>
+          <div class="modal-spec-grid" id="modal-spec-grid">
+            <!-- Injected via script.js -->
+          </div>
+          <div style="background-color: #FEF3C7; border: 1px solid #FCD34D; color: #92400E; padding: 10px 14px; border-radius: 8px; font-size: 0.8125rem;">
+            <strong>Demonstration notice:</strong> Specifications are illustrative. Please contact our shop directly to verify current TRCSL approval, company warranty status, and exact in-stock variants.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a id="modal-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+            Confirm Live Stock on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Owner Setup Guide & Deployment Modal -->
+    <div class="modal-backdrop" id="setup-guide-modal" aria-hidden="true" role="dialog" aria-labelledby="guide-modal-title">
+      <div class="modal-window" style="max-width: 680px;">
+        <div class="modal-header">
+          <div>
+            <h4 class="modal-title" id="guide-modal-title">Store Owner Configuration Guide</h4>
+            <p style="font-size: 0.8125rem; color: #64748B;">How to replace placeholders and publish your website</p>
+          </div>
+          <button type="button" class="modal-close-btn" id="setup-guide-close" aria-label="Close guide">✕</button>
+        </div>
+        <div class="modal-body" style="font-size: 0.9375rem; color: #334155; line-height: 1.6;">
+          <h5 style="color: #0A192F; font-size: 1rem; margin-bottom: 8px; font-weight: 700;">1. WhatsApp & Phone Numbers to Replace</h5>
+          <p>
+            In both <code>index.html</code> and <code>script.js</code> (inside <code>SHOP_CONFIG</code> at line 10), replace the sample number <code>94770000000</code> with your registered Sri Lankan phone number (in international format without '+' or spaces, e.g. <code>94771234567</code>).
+          </p>
+          <div class="guide-code-box">
+const SHOP_CONFIG = {<br>
+&nbsp;&nbsp;businessName: 'LinkPoint',<br>
+&nbsp;&nbsp;phoneDisplay: '+94 77 123 4567',<br>
+&nbsp;&nbsp;phoneCall: '+94771234567',<br>
+&nbsp;&nbsp;whatsappNumber: '94771234567',<br>
+&nbsp;&nbsp;addressText: 'Your Real Street Address, Town, Sri Lanka'<br>
+};
+          </div>
+
+          <h5 style="color: #0A192F; font-size: 1rem; margin-top: 20px; margin-bottom: 8px; font-weight: 700;">2. Physical Shop Address & Google Maps</h5>
+          <p>
+            Update the shop address placeholder in <code>index.html</code> under the <em>#contact</em> section. To show your live map, go to Google Maps, search your shop, click <strong>Share → Embed a map</strong>, and paste the <code>&lt;iframe&gt;</code> code into <code>.map-embed-wrapper</code>.
+          </p>
+
+          <h5 style="color: #0A192F; font-size: 1rem; margin-top: 20px; margin-bottom: 8px; font-weight: 700;">3. Demonstration Products & Pricing</h5>
+          <p>
+            All smartphone and accessory models are configured in <code>script.js</code> in the <code>DEMO_PRODUCTS</code> array. Update model names, specifications, and prices (in LKR) with your verified shop stock.
+          </p>
+
+          <h5 style="color: #0A192F; font-size: 1rem; margin-top: 20px; margin-bottom: 8px; font-weight: 700;">4. Printing Rates</h5>
+          <p>
+            Printing and finishing rates are stored in <code>PRINT_RATES</code> and <code>FINISHING_RATES</code> in <code>script.js</code>. Adjust the per-page rate to match your current paper and toner costs.
+          </p>
+        </div>
+        <div class="modal-footer" style="justify-content: space-between; align-items: center;">
+          <span style="font-size: 0.8125rem; color: #64748B;">Ready for retail deployment in Sri Lanka</span>
+          <button type="button" class="btn btn-primary btn-sm" id="guide-done-btn">
+            Done & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vanilla JavaScript Engine -->
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
